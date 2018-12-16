@@ -1,0 +1,9 @@
+// header styles
+
+@mixin heading-text($font-size, $color, $text-transform) {
+    color: $color;
+    font-size: $font-size;
+    text-transform: $text-transform;
+}
+
+// section title

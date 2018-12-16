@@ -1,0 +1,12 @@
+.form-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form-title {
+    @include heading-text($xlarge-font, darken($tertiary-color, 25), uppercase);
+}
+
+.form-items {
+    display: block;
+}

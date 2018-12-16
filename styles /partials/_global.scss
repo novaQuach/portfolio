@@ -7,14 +7,45 @@ body {
     font-size: $small-font;
 }
 
+p {
+    margin: 0;
+}
+
 .wrapper {
     max-width: 1660px;
     margin: 0 auto;
 }
 
 .inner-wrapper {
-    width: 97%;
-    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+// general section styles
+
+.section-wrapper {
+    padding: 0 320px;
+}
+
+.section-description-container {
+    display: flex;
+    align-items: center;
+    margin-top: 140px;
+}
+
+.section-description {
+    @include heading-text($small-font, darken($tertiary-color, 25), uppercase);
+}
+
+.dash {
+    width: 5rem;
+    border-bottom: 3px solid $accent-color-dark;
+    margin-right: 4px;
+}
+
+.section-title {
+    margin: 0;
+    font-size: $large-font;
 }
 
 // hamburg button css
