@@ -15,13 +15,26 @@ footer {
     padding: 0;
 }
 
-.nav-items,
+.nav-items {
+    padding: 0 8px;
+    display: inline-block;
+    font-size: $xsmall-font;
+
+    &-border {
+        border-right: 1px solid $primary-color;
+        &:last-child {
+            border: none;
+        }
+    }
+}
+
 .copyright-statement {
     display: inline-block;
     font-size: $xsmall-font;
+    color: darken($quartenary-color, 5);
 }
 
 .nav-links {
     text-decoration: none;
-    color: $primary-color;
+    color: darken($quartenary-color, 5);
 }

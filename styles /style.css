@@ -450,6 +450,10 @@ h1::before {
   font-size: 5.5rem;
 }
 
+.skill-icon {
+  color: #45918b;
+}
+
 .form-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -509,14 +513,28 @@ footer {
   padding: 0;
 }
 
-.nav-items,
-.copyright-statement {
+.nav-items {
+  padding: 0 8px;
   display: inline-block;
   font-size: 1.6rem;
 }
 
+.nav-items-border {
+  border-right: 1px solid #333;
+}
+
+.nav-items-border:last-child {
+  border: none;
+}
+
+.copyright-statement {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #7b7b7b;
+}
+
 .nav-links {
   text-decoration: none;
-  color: #333;
+  color: #7b7b7b;
 }
 /*# sourceMappingURL=style.css.map */
