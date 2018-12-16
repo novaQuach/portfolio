@@ -1,0 +1,50 @@
+.landing-header {
+    background: $tertiary-color;
+    height: 100vh;
+}
+
+.h1-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+h1,
+.h1-span {
+    font-size: $xlarge-font;
+    color: $secondary-color;
+    line-height: 0.8;
+    margin: 0 auto;
+    text-align: left;
+    text-transform: lowercase;
+    //  text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;
+    text-shadow: 0px 0px 2px $primary-color;
+    z-index: 10;
+    position: relative;
+}
+
+.h1-span {
+    display: block;
+    // margin-left: 149px;
+}
+
+h1::before {
+    content: '';
+    background: url(../../assets/lowercase-n.svg);
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 200px;
+    bottom: -5px;
+    z-index: -10;
+}
+
+// 'nova' p tag
+.logo {
+    color: $quartenary-color;
+    font-weight: bold;
+    font-size: $medium-font;
+    margin: 0;
+}
