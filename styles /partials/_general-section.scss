@@ -1,0 +1,24 @@
+.section-wrapper {
+    padding: 0 320px;
+}
+
+.section-description-container {
+    display: flex;
+    align-items: center;
+    margin-top: 140px;
+}
+
+.section-description {
+    @include heading-text($small-font, darken($tertiary-color, 25), uppercase);
+}
+
+.dash {
+    width: 5rem;
+    border-bottom: 3px solid $accent-color-dark;
+    margin-right: 4px;
+}
+
+.section-title {
+    margin: 0;
+    font-size: $large-font;
+}

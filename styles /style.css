@@ -216,36 +216,6 @@ p {
   padding-right: 20px;
 }
 
-.section-wrapper {
-  padding: 0 320px;
-}
-
-.section-description-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 140px;
-}
-
-.section-description {
-  text-transform: uppercase;
-  color: #f86e52;
-}
-
-.dash {
-  width: 5rem;
-  border-bottom: 3px solid #45918b;
-  margin-right: 4px;
-}
-
-.section-title {
-  margin: 0;
-  font-size: 5.5rem;
-}
-
 .landing-header {
   background: #fdd5cd;
   height: 100vh;
@@ -449,21 +419,104 @@ h1::before {
           transform: none;
 }
 
+.section-wrapper {
+  padding: 0 320px;
+}
+
+.section-description-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 140px;
+}
+
+.section-description {
+  color: #f86e52;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.dash {
+  width: 5rem;
+  border-bottom: 3px solid #45918b;
+  margin-right: 4px;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 5.5rem;
+}
+
 .form-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .form-title {
-  text-transform: uppercase;
+  background: #cef2f0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40%;
+          flex: 1 0 40%;
+  text-align: center;
+}
+
+.form-title,
+.form-title-span {
   color: #f86e52;
+  font-size: 5.5rem;
+  text-transform: uppercase;
+  display: block;
+}
+
+.contact-form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 60%;
+          flex: 1 0 60%;
 }
 
 .form-items {
   display: block;
+  width: 100%;
+  background: #45918b;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fdd5cd;
+  margin-top: 140px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-items,
+.copyright-statement {
+  display: inline-block;
+  font-size: 1.6rem;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #333;
 }
 /*# sourceMappingURL=style.css.map */

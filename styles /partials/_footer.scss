@@ -1,0 +1,27 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // background: $accent-color-light;
+    background: $tertiary-color;
+    margin-top: 140px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items,
+.copyright-statement {
+    display: inline-block;
+    font-size: $xsmall-font;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: $primary-color;
+}
