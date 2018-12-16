@@ -217,7 +217,7 @@ p {
 }
 
 .landing-header {
-  background: #fdd5cd;
+  background: #ffbaad;
   height: 100vh;
 }
 
@@ -293,7 +293,7 @@ h1::before {
 }
 
 .menu-link:hover {
-  color: #45918b;
+  color: #59b0a9;
 }
 
 .nav-wrapper {
@@ -434,14 +434,14 @@ h1::before {
 }
 
 .section-description {
-  color: #f86e52;
+  color: #ff7a61;
   font-size: 1.8rem;
   text-transform: uppercase;
 }
 
 .dash {
   width: 5rem;
-  border-bottom: 3px solid #45918b;
+  border-bottom: 3px solid #59b0a9;
   margin-right: 4px;
 }
 
@@ -450,8 +450,51 @@ h1::before {
   font-size: 5.5rem;
 }
 
+.skill-set-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 .skill-icon {
-  color: #45918b;
+  color: #59b0a9;
+  font-size: 9rem;
+}
+
+.skill-svg {
+  width: 100px;
+  height: 100px;
+  fill: #59b0a9;
+  font-weight: bold;
+}
+
+.skill-item {
+  width: 20%;
+  text-align: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.skill-item:hover .skill-description {
+  visibility: visible;
+}
+
+.skill-description {
+  display: block;
+  visibility: hidden;
+  color: #ff7a61;
+  font-size: 1.8rem;
+  text-transform: none;
 }
 
 .form-wrapper {
@@ -473,7 +516,7 @@ h1::before {
 
 .form-title,
 .form-title-span {
-  color: #f86e52;
+  color: #ff4f2e;
   font-size: 5.5rem;
   text-transform: uppercase;
   display: block;
@@ -488,7 +531,7 @@ h1::before {
 .form-items {
   display: block;
   width: 100%;
-  background: #45918b;
+  background: #59b0a9;
 }
 
 footer {
@@ -501,7 +544,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #fdd5cd;
+  background: #ffbaad;
   margin-top: 140px;
   padding-top: 50px;
   padding-bottom: 50px;

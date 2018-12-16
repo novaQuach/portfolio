@@ -3,11 +3,15 @@
 $primary-color: #333;
 $secondary-color: #fafafa;
 // $tertiary-color: #feb5a6;
-$tertiary-color: #fdd5cd;
+
+$tertiary-color: #ffbaad;
+$tertiary-color-dark: darken($tertiary-color, 15);
 $quartenary-color: #888;
 
 $accent-color-light: #cef2f0;
-$accent-color-dark: darken(#59b0a9, 10);
+// $accent-color-dark: darken(#59b0a9, 10);
+
+$accent-color-dark: #59b0a9;
 
 // Fontfamily
 $primary-font: 'Poppins', sans-serif;

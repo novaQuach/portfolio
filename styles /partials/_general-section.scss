@@ -9,7 +9,7 @@
 }
 
 .section-description {
-    @include heading-text($small-font, darken($tertiary-color, 25), uppercase);
+    @include heading-text($small-font, $tertiary-color-dark, uppercase);
 }
 
 .dash {
