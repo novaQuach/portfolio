@@ -421,7 +421,7 @@ h1::before {
 }
 
 .section-wrapper {
-  padding: 0 320px;
+  padding: 0 220px;
 }
 
 .section-description-container {
@@ -435,7 +435,7 @@ h1::before {
 }
 
 .section-description {
-  color: #ff7a61;
+  color: #ff6447;
   font-size: 1.8rem;
   text-transform: uppercase;
 }
@@ -447,8 +447,10 @@ h1::before {
 }
 
 .section-title {
-  margin: 0;
+  color: #333;
   font-size: 5.5rem;
+  text-transform: none;
+  margin: 0;
 }
 
 .skill-set-container {
@@ -486,6 +488,15 @@ h1::before {
   margin: 10px;
 }
 
+.skill-item:hover .skill-icon {
+  color: #ff6447;
+  fill: #ff6447;
+}
+
+.skill-item:hover .skill-svg {
+  fill: #ff6447;
+}
+
 .skill-item:hover .skill-description {
   visibility: visible;
 }
@@ -493,9 +504,48 @@ h1::before {
 .skill-description {
   display: block;
   visibility: hidden;
-  color: #ff7a61;
+  color: #ff6447;
   font-size: 1.8rem;
   text-transform: none;
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.project-img-container {
+  width: 50%;
+}
+
+.project-description {
+  width: 50%;
+}
+
+.btn {
+  border-style: none;
+  background: #59b0a9;
+  padding: 5px 25px;
+  border-radius: 35px;
+  border: solid 2px #59b0a9;
+}
+
+.btn:hover {
+  background: #cef2f0;
+}
+
+.btn-live {
+  border-style: none;
+  background: #fafafa;
+  padding: 5px 25px;
+  border-radius: 35px;
+  border: solid 2px #ff6447;
+}
+
+.btn-live:hover {
+  background: #ff6447;
 }
 
 .form-wrapper {
@@ -547,8 +597,8 @@ footer {
           align-items: center;
   background: #ffbaad;
   margin-top: 140px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .nav-list {

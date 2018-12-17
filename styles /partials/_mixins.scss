@@ -6,4 +6,11 @@
     text-transform: $text-transform;
 }
 
+@mixin button-style($color, $border...) {
+    border-style: none;
+    background: $color;
+    padding: 5px 25px;
+    border-radius: 35px;
+    border: $border;
+}
 // section title

@@ -26,8 +26,19 @@
     padding: 10px;
     margin: 10px;
 
-    &:hover .skill-description {
-        visibility: visible;
+    &:hover {
+        .skill-icon {
+            color: $tertiary-color-dark;
+            fill: $tertiary-color-dark;
+        }
+
+        .skill-svg {
+            fill: $tertiary-color-dark;
+        }
+
+        .skill-description {
+            visibility: visible;
+        }
     }
 }
 

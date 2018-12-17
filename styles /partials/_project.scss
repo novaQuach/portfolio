@@ -1,0 +1,32 @@
+.project {
+    display: flex;
+    width: 100%;
+}
+
+.project-img-container {
+    width: 50%;
+}
+
+.project-description {
+    // flex: 0 1 50%;
+    width: 50%;
+}
+
+.btn {
+    @include button-style($accent-color-dark, solid 2px $accent-color-dark);
+    // background: $accent-color-light;
+    // padding: 5px 25px;
+    // border-radius: 35px;
+    // border: solid 2px $accent-color-dark;;
+    &:hover {
+        background: $accent-color-light;
+    }
+}
+
+.btn-live {
+    @include button-style($secondary-color, solid 2px $tertiary-color-dark);
+
+    &:hover {
+        background: $tertiary-color-dark;
+    }
+}

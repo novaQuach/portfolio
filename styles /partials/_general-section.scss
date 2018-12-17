@@ -1,5 +1,6 @@
 .section-wrapper {
-    padding: 0 320px;
+    padding: 0 220px;
+    // psd template 320px;
 }
 
 .section-description-container {
@@ -19,6 +20,6 @@
 }
 
 .section-title {
+    @include heading-text($large-font, $primary-color, none);
     margin: 0;
-    font-size: $large-font;
 }
