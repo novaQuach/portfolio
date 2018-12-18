@@ -12,7 +12,7 @@
 .form-title {
     @include heading-text($medium-font, lighten($primary-color, 15), uppercase);
     text-align: center;
-    margin-top: 80px;
+    margin-top: 35px;
 }
 
 .contact-form {
@@ -53,14 +53,14 @@
 }
 
 .message-submit-btn {
-    @include button-style(white, solid 3px $accent-color-dark);
+    @include button-style($accent-color-dark, solid 3px $accent-color-dark);
     margin: 30px auto;
     width: 200px;
-    color: $primary-color;
+    color: white;
 
     &:hover {
-        background: $accent-color-dark;
-        color: #fafafa;
+        background: white;
+        color: $accent-color-dark;
     }
 }
 
@@ -69,7 +69,7 @@
 }
 
 .contact-item {
-    margin-top: 20px;
+    margin: 25px 0 20px 0;
 }
 .contact-item,
 .contact-link {

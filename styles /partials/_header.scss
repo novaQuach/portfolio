@@ -47,7 +47,7 @@ h1::before {
 .logo {
     @include heading-text($medium-font, $quartenary-color, lowercase);
     font-weight: bold;
-    text-shadow: 0px 0px 0.5px $primary-color;
+    text-shadow: 0px 0px 0.3px $primary-color;
 }
 
 .logo-nav-container {
