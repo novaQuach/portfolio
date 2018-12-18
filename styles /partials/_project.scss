@@ -14,12 +14,13 @@
     font-weight: bold;
 }
 
+.project-description {
+    margin-top: 15px;
+}
+
 .btn {
     @include button-style(white, solid 2px $accent-color-dark);
-    // background: $accent-color-light;
-    // padding: 5px 25px;
-    // border-radius: 35px;
-    // border: solid 2px $accent-color-dark;;
+    margin: 20px;
     &:hover {
         background: $accent-color-dark;
         .project-link {

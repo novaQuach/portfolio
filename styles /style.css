@@ -286,48 +286,53 @@ h1::before {
   margin-top: 10px;
 }
 
-.menu-link {
+a {
   text-decoration: none;
   color: #232323;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
-.menu-link:hover {
-  color: #59b0a9;
+a:hover {
+  color: tomato;
 }
 
-.nav-wrapper {
-  position: relative;
-}
-
-.menu-toggle {
-  display: inline-block;
-  position: relative;
+#menuToggle {
+  display: block;
   position: absolute;
   top: 50px;
   right: 50px;
   z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
 }
 
-.menu-toggle input {
+#menuToggle input {
   display: block;
   width: 40px;
   height: 32px;
   position: absolute;
   top: -7px;
-  right: -5px;
+  left: -5px;
   cursor: pointer;
   opacity: 0;
   /* hide this */
   z-index: 2;
   /* and place it over the hamburger */
+  -webkit-touch-callout: none;
 }
 
 /*
  * Just a quick hamburger
  */
-.menu-toggle span {
+.hamburger {
+  position: absolute;
+  right: 100px;
+}
+
+#menuToggle span {
   display: block;
   width: 33px;
   height: 4px;
@@ -344,12 +349,12 @@ h1::before {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-.menu-toggle span:first-child {
+#menuToggle span:first-child {
   -webkit-transform-origin: 0% 0%;
           transform-origin: 0% 0%;
 }
 
-.menu-toggle span:nth-last-child(2) {
+#menuToggle span:nth-last-child(2) {
   -webkit-transform-origin: 0% 100%;
           transform-origin: 0% 100%;
 }
@@ -358,7 +363,7 @@ h1::before {
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-.menu-toggle input:checked ~ span {
+#menuToggle input:checked ~ span {
   opacity: 1;
   -webkit-transform: rotate(45deg) translate(-2px, -1px);
           transform: rotate(45deg) translate(-2px, -1px);
@@ -368,7 +373,7 @@ h1::before {
 /*
  * But let's hide the middle one.
  */
-.menu-toggle input:checked ~ span:nth-last-child(3) {
+#menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   -webkit-transform: rotate(0deg) scale(0.2, 0.2);
           transform: rotate(0deg) scale(0.2, 0.2);
@@ -377,7 +382,8 @@ h1::before {
 /*
  * Ohyeah and the last one should go the other direction
  */
-.menu-toggle input:checked ~ span:nth-last-child(2) {
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  opacity: 1;
   -webkit-transform: rotate(-45deg) translate(0, -1px);
           transform: rotate(-45deg) translate(0, -1px);
 }
@@ -386,13 +392,13 @@ h1::before {
  * Make this absolute positioned
  * at the top left of the screen
  */
-.menu {
-  border: 2px red solid;
+#menu {
   position: absolute;
   width: 300px;
-  margin: -100px 0 0 -220px;
+  margin: -100px 0 0 0;
   padding: 50px;
   padding-top: 125px;
+  right: -100px;
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -407,17 +413,18 @@ h1::before {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-.menu li {
+#menu li {
   padding: 10px 0;
   font-size: 22px;
 }
 
 /*
- * And let's slide it in from the left
+ * And let's fade it in from the left
  */
-.menu-toggle input:checked ~ ul {
-  -webkit-transform: none;
-          transform: none;
+#menuToggle input:checked ~ ul {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  opacity: 1;
 }
 
 .section-wrapper {
@@ -537,13 +544,18 @@ h1::before {
   font-weight: bold;
 }
 
+.project-description {
+  margin-top: 15px;
+}
+
 .btn {
   border-style: none;
   background: white;
-  width: 150px;
+  width: 175px;
   padding: 5px 25px;
   border-radius: 35px;
   border: solid 2px #59b0a9;
+  margin: 20px;
 }
 
 .btn:hover {
@@ -557,7 +569,7 @@ h1::before {
 .btn-live {
   border-style: none;
   background: white;
-  width: 150px;
+  width: 175px;
   padding: 5px 25px;
   border-radius: 35px;
   border: solid 3px #ffbaad;
@@ -583,6 +595,7 @@ h1::before {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  margin: 100px 0 140px 0;
 }
 
 .form-title-container {
@@ -591,10 +604,11 @@ h1::before {
 }
 
 .form-title {
-  color: #59b0a9;
-  font-size: 5.5rem;
+  color: #595959;
+  font-size: 2.4rem;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 80px;
 }
 
 .contact-form {
@@ -619,19 +633,23 @@ h1::before {
 }
 
 .form-items::-webkit-input-placeholder {
-  color: #333;
+  color: #888;
+  opacity: 1;
 }
 
 .form-items:-ms-input-placeholder {
-  color: #333;
+  color: #888;
+  opacity: 1;
 }
 
 .form-items::-ms-input-placeholder {
-  color: #333;
+  color: #888;
+  opacity: 1;
 }
 
 .form-items::placeholder {
-  color: #333;
+  color: #888;
+  opacity: 1;
 }
 
 #message {
@@ -646,7 +664,7 @@ h1::before {
 .message-submit-btn {
   border-style: none;
   background: white;
-  width: 150px;
+  width: 175px;
   padding: 5px 25px;
   border-radius: 35px;
   border: solid 3px #59b0a9;
@@ -658,6 +676,38 @@ h1::before {
 .message-submit-btn:hover {
   background: #59b0a9;
   color: #fafafa;
+}
+
+.contact-list {
+  list-style: none;
+}
+
+.contact-item {
+  margin-top: 20px;
+}
+
+.contact-item,
+.contact-link {
+  display: block;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #888;
+  font-size: 1.8rem;
+}
+
+.contact-link:hover {
+  color: #45918b;
+  font-weight: bold;
+}
+
+.dash-spacer {
+  margin-bottom: 10px;
+}
+
+.contact-icon {
+  font-size: 2.4rem;
 }
 
 footer {

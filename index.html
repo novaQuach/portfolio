@@ -23,7 +23,72 @@
         <header class="landing-header inner-wrapper">
             <div class="logo-nav-container">
                 <p class="logo">Nova</p>
-                <!-- hamburg button -->
+                <!--sun hamburg button -->
+                <!-- <div>
+                    <label>
+                        <input type='checkbox'>
+                        <span class='menu'>
+                            <span class='hamburger'></span>
+                        </span>
+                        <ul>
+                            <li>
+                                <a href='#'>Home</a>
+                            </li>
+                            <li>
+                                <a href='#'>About</a>
+                            </li>
+                            <li>
+                                <a href='#'>Work</a>
+                            </li>
+                        </ul>
+                    </label>
+                </div> -->
+                <div>
+                    <div id="menuToggle">
+                        <!--
+                    A fake / hidden checkbox is used as click reciever,
+                    so you can use the :checked selector on it.
+                    -->
+                        <input type="checkbox" />
+
+                        <!--
+                    Some spans to act as a hamburger.
+                    
+                    They are acting like a real hamburger,
+                    not that McDonalds stuff.
+                    -->
+                        <div class="sticky hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <!--
+                    Too bad the menu has to be inside of the button
+                    but hey, it's pure CSS magic.
+                    -->
+                        <ul id="menu">
+                            <a href="#">
+                                <li>Home</li>
+                            </a>
+                            <a href="#">
+                                <li>About</li>
+                            </a>
+                            <a href="#">
+                                <li>Info</li>
+                            </a>
+                            <a href="#">
+                                <li>Contact</li>
+                            </a>
+                            <a href="https://erikterwan.com/" target="_blank">
+                                <li>Show me more</li>
+                            </a>
+                        </ul>
+                    </div>
+                    </nav>
+                </div>
+
+
             </div>
             <div class="title-wrapper">
                 <h1 class="animated pulse">Nova <span class="h1-span">quach</span></h1>
@@ -61,13 +126,13 @@
                     <div class="project-img-container" data-aos="fade-up" data-aos-duration="800">
                         <img class="project-img" src="./assets/quick-scribble.png" alt="preview of quick scribble project">
                     </div>
-                    <div class="project-description" data-aos="fade-left" data-aos-duration="800">
+                    <div class="project-description-container" data-aos="fade-left" data-aos-duration="800">
                         <p class="
                         project-title">Quick scribble</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem fugiat deserunt modi
-                            nisi reiciendis veniam quia, minima ratione totam, hic ducimus, est exercitationem
-                            numquam nostrum. At, quod. Unde, repellendus ratione?
+                        <p class="project-description"> Update your main focus for the day and jot down mini tasks.
+                            Cross out each task as you complete them, post-it style!
                         </p>
+
                         <button class="btn-live">
                             <a class="project-link" href="">Live</a>
                         </button>
@@ -78,10 +143,11 @@
                 </div>
 
                 <div class="project">
-                    <div class="project-description" data-aos="fade-right" data-aos-duration="800">
+                    <div class="project-description-container" data-aos="fade-right" data-aos-duration="800">
                         <p class="
                         project-title">Glasses me now</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem fugiat deserunt modi
+                        <p class="project-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+                            fugiat deserunt modi
                             nisi reiciendis veniam quia, minima ratione totam, hic ducimus, est exercitationem
                             numquam nostrum. At, quod. Unde, repellendus ratione?
                         </p>
@@ -103,9 +169,10 @@
                     <div class="project-img-container" data-aos="fade-up" data-aos-duration="800">
                         <img class="project-img" src="./assets/willow.png" alt="preview of willow project">
                     </div>
-                    <div class="project-description" data-aos="fade-left" data-aos-duration="800">
+                    <div class="project-description container" data-aos="fade-left" data-aos-duration="800">
                         <p class="project-title">Willow</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem fugiat deserunt modi
+                        <p class="project-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+                            fugiat deserunt modi
                             nisi reiciendis veniam quia, minima ratione totam, hic ducimus, est exercitationem
                             numquam nostrum. At, quod. Unde, repellendus ratione?
                         </p>
@@ -225,7 +292,30 @@
 
                 <div class="form-wrapper">
                     <div class="form-title-container">
-                        <p class="form-title">Say hello</p>
+                        <p class="form-title">say hello</p>
+                        <ul class="contact-list">
+                            <li class="contact-item">email me</li>
+                            <div class="dash dash-spacer"></div>
+                            <li><a class="contact-link" href="">hello@novaquach.com</a></li>
+                            <li class="contact-item">follow me</li>
+                            <div class="dash dash-spacer"></div>
+                            <li>
+                                <ul class="nav-list">
+                                    <li class="nav-items">
+                                        <a class="nav-links" href="#"><i class="fab fa-twitter contact-icon "></i></a>
+                                    </li>
+                                    <li class="nav-items">
+                                        <a class="nav-links" href="#"><i class="fab fa-medium-m contact-icon "></i></a>
+                                    </li>
+                                    <li class="nav-items">
+                                        <a class="nav-links" href=""><i class="fab fa-github contact-icon "></i></a>
+                                    </li>
+                                    <li class="nav-items">
+                                        <a class="nav-links" href="#"><i class="fab fa-linkedin-in contact-icon "></i></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
 
 

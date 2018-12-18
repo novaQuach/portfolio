@@ -1,7 +1,7 @@
 .form-wrapper {
     display: flex;
-    // justify-content: space-evenly;
     align-items: stretch;
+    margin: 100px 0 140px 0;
 }
 
 .form-title-container {
@@ -10,8 +10,9 @@
 }
 
 .form-title {
-    @include heading-text($large-font, $accent-color-dark, uppercase);
+    @include heading-text($medium-font, lighten($primary-color, 15), uppercase);
     text-align: center;
+    margin-top: 80px;
 }
 
 .contact-form {
@@ -34,7 +35,10 @@
         margin-top: 80px;
     }
     &::placeholder {
-        color: $primary-color;
+        // color: $primary-color;
+        color: $quartenary-color;
+        opacity: 1;
+
         // text-align: left;
     }
 }
@@ -58,4 +62,33 @@
         background: $accent-color-dark;
         color: #fafafa;
     }
+}
+
+.contact-list {
+    list-style: none;
+}
+
+.contact-item {
+    margin-top: 20px;
+}
+.contact-item,
+.contact-link {
+    display: block;
+}
+
+.contact-link {
+    @include link-style($quartenary-color);
+    font-size: $small-font;
+    &:hover {
+        color: darken($accent-color-dark, 10);
+        font-weight: bold;
+    }
+}
+
+.dash-spacer {
+    margin-bottom: 10px;
+}
+
+.contact-icon {
+    font-size: $medium-font;
 }

@@ -9,7 +9,7 @@
 @mixin button-style($color, $border...) {
     border-style: none;
     background: $color;
-    width: 150px;
+    width: 175px;
     padding: 5px 25px;
     border-radius: 35px;
     border: $border;
