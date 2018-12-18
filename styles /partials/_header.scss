@@ -50,6 +50,11 @@ h1::before {
     text-shadow: 0px 0px 0.5px $primary-color;
 }
 
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .role {
     @include heading-text($small-font, $quartenary-color, capitalize);
     margin-top: 10px;
