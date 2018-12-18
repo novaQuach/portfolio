@@ -10,8 +10,10 @@
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles /style.css" />
+    <link type="image/png" href="assets/favicon.png" rel="icon">
 
     <title>Nova Quach</title>
 </head>
@@ -24,7 +26,7 @@
                 <!-- hamburg button -->
             </div>
             <div class="title-wrapper">
-                <h1>Nova <span class="h1-span">quach</span></h1>
+                <h1 class="animated pulse">Nova <span class="h1-span">quach</span></h1>
                 <p class="role">Web developer</p>
             </div>
         </header>
@@ -37,13 +39,15 @@
                 </div>
 
                 <h2 class="section-title">About me</h2>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing
-                    elit. Asperiores, magnam quia architecto vero dolor
-                    accusamus a molestiae natus doloribus minima
-                    reprehenderit in? Tempore, porro quo.
-                </p>
-                <img src="" alt="picture of nova quach" />
+                <div class="about-description-container">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Asperiores, magnam quia architecto vero dolor
+                        accusamus a molestiae natus doloribus minima
+                        reprehenderit in? Tempore, porro quo.
+                    </p>
+                    <img src="" alt="picture of nova quach" />
+                </div>
             </section>
 
             <section class="section-wrapper">
@@ -53,82 +57,86 @@
                     </p>
                 </div>
                 <h2 class="section-title">Projects</h2>
-                <div class="project">
-                    <div class="project-img-container animated pulse">
+                <div class="project first-project">
+                    <div class="project-img-container" data-aos="fade-up" data-aos-duration="800">
                         <img class="project-img" src="./assets/quick-scribble.png" alt="preview of quick scribble project">
                     </div>
-                    <div class="project-description">
-                        <p>Quick scribble</p>
+                    <div class="project-description" data-aos="fade-left" data-aos-duration="800">
+                        <p class="
+                        project-title">Quick scribble</p>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem fugiat deserunt modi
                             nisi reiciendis veniam quia, minima ratione totam, hic ducimus, est exercitationem
                             numquam nostrum. At, quod. Unde, repellendus ratione?
                         </p>
-                        <button class="btn">
-                            <a href="">GitHub</a>
-                        </button>
                         <button class="btn-live">
-                            <a href="">Live</a>
+                            <a class="project-link" href="">Live</a>
+                        </button>
+                        <button class="btn">
+                            <a class="project-link" href="">GitHub</a>
                         </button>
                     </div>
                 </div>
 
                 <div class="project">
-                    <div class="project-description">
-                        <p>Glasses me Now</p>
+                    <div class="project-description" data-aos="fade-right" data-aos-duration="800">
+                        <p class="
+                        project-title">Glasses me now</p>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem fugiat deserunt modi
                             nisi reiciendis veniam quia, minima ratione totam, hic ducimus, est exercitationem
                             numquam nostrum. At, quod. Unde, repellendus ratione?
                         </p>
-                        <button class="btn">
-                            <a href="">GitHub</a>
-                        </button>
+
                         <button class="btn-live">
-                            <a href="">Live</a>
+                            <a class="project-link" href="">Live</a>
                         </button>
+                        <button class="btn">
+                            <a class="project-link" href="">GitHub</a>
+                        </button>
+
                     </div>
-                    <div class="project-img-container">
-                        <img src="./assets/glasses-me-now.png" alt="preview of glasses me now project">
+                    <div class="project-img-container" data-aos="fade-up" data-aos-duration="800">
+                        <img src=" ./assets/glasses-me-now.png" alt="preview of glasses me now project">
                     </div>
                 </div>
 
                 <div class="project">
-                    <div class="project-img-container animated pulse">
+                    <div class="project-img-container" data-aos="fade-up" data-aos-duration="800">
                         <img class="project-img" src="./assets/willow.png" alt="preview of willow project">
                     </div>
-                    <div class="project-description">
-                        <p>Willow</p>
+                    <div class="project-description" data-aos="fade-left" data-aos-duration="800">
+                        <p class="project-title">Willow</p>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem fugiat deserunt modi
                             nisi reiciendis veniam quia, minima ratione totam, hic ducimus, est exercitationem
                             numquam nostrum. At, quod. Unde, repellendus ratione?
                         </p>
-                        <button class="btn">
-                            <a href="">GitHub</a>
-                        </button>
                         <button class="btn-live">
-                            <a href="">Live</a>
+                            <a class="project-link" href="">Live</a>
+                        </button>
+                        <button class="btn">
+                            <a class="project-link" href="">GitHub</a>
                         </button>
                     </div>
                 </div>
 
 
                 <div class="project">
-                    <div class="project-description">
-                        <p>Piece by Peace</p>
+                    <div class="project-description" data-aos="fade-right" data-aos-duration="800">
+                        <p class="
+                        project-title">Piece by peace</p>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem fugiat deserunt modi
                             nisi reiciendis veniam quia, minima ratione totam, hic ducimus, est exercitationem
                             numquam nostrum. At, quod. Unde, repellendus ratione?
                         </p>
-                        <button class="btn">
-                            <a href="">GitHub</a>
-                        </button>
                         <button class="btn-live">
-                            <a href="">Live</a>
+                            <a class="project-link" href="">Live</a>
+                        </button>
+                        <button class="btn">
+                            <a class="project-link" href="">GitHub</a>
                         </button>
                     </div>
-                    <div class="project-img-container">
+                    <div class="project-img-container" data-aos="fade-up" data-aos-duration="800">
                         <img src="./assets/piece-by-peace.png" alt="preview of piece by peace project">
                     </div>
-
                 </div>
             </section>
 
@@ -206,32 +214,41 @@
                 </ul>
             </section>
 
-            <section class="
-                            section-wrapper">
+            <section class="section-wrapper">
                 <div class="section-description-container">
                     <div class=" dash"></div>
                     <p class="section-description"> 05 - let's get in touch
                     </p>
                 </div>
                 <h2 class="section-title">Contact</h2>
+
+
                 <div class="form-wrapper">
-                    <div class="form-title">Say <span class="form-title-span">hello</span></div>
+                    <div class="form-title-container">
+                        <p class="form-title">Say hello</p>
+                    </div>
+
+
+
                     <form class="contact-form" action="">
                         <input class="form-items" type="text" placeholder="Name" id="name">
                         <label for="name"></label>
 
+
                         <input class="form-items" type="email" placeholder="Email" id="email">
                         <label for="email"></label>
+
 
                         <input class="form-items" type="text" placeholder="Subject" id="subject">
                         <label for="subject"></label>
 
-                        <input class="form-items" type="textarea" placeholder="Message" id="message">
+                        <textarea class="form-items" placeholder="Message" id="message"></textarea>
                         <label for="message"></label>
 
-                        <input type="submit" id="submit" value="Send message">
-                        <label for="submit"></label>
-
+                        <div class="message-btn-wrapper">
+                            <input class="message-submit-btn" type="submit" id="submit" value="Send message">
+                            <label for="submit"></label>
+                        </div>
                     </form>
                 </div>
 
@@ -251,22 +268,24 @@
             <nav>
                 <ul class="nav-list">
                     <li class="nav-items">
-                        <a class="nav-links" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="nav-links" href="#"><i class="fab fa-twitter nav-icon"></i></a>
                     </li>
                     <li class="nav-items">
-                        <a class="nav-links" href="#"><i class="fab fa-medium-m"></i></a>
+                        <a class="nav-links" href="#"><i class="fab fa-medium-m nav-icon"></i></a>
                     </li>
                     <li class="nav-items">
-                        <a class="nav-links" href=""><i class="fab fa-github"></i></a>
+                        <a class="nav-links" href=""><i class="fab fa-github nav-icon"></i></a>
                     </li>
                     <li class="nav-items">
-                        <a class="nav-links" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="nav-links" href="#"><i class="fab fa-linkedin-in nav-icon"></i></a>
                     </li>
                 </ul>
             </nav>
             <p class="copyright-statement">&copy; Nova Quach</p>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

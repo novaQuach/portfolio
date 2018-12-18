@@ -1,32 +1,44 @@
 .project {
     display: flex;
     width: 100%;
+    justify-content: space-between;
+    margin: 140px 0;
 }
 
-.project-img-container {
-    width: 50%;
+.first-project {
+    margin-top: 100px;
 }
 
-.project-description {
-    // flex: 0 1 50%;
-    width: 50%;
+.project-title {
+    @include heading-text($medium-large-font, $primary-color, Capitalize);
+    font-weight: bold;
 }
 
 .btn {
-    @include button-style($accent-color-dark, solid 2px $accent-color-dark);
+    @include button-style(white, solid 2px $accent-color-dark);
     // background: $accent-color-light;
     // padding: 5px 25px;
     // border-radius: 35px;
     // border: solid 2px $accent-color-dark;;
     &:hover {
-        background: $accent-color-light;
+        background: $accent-color-dark;
+        .project-link {
+            color: #fafafa;
+        }
     }
 }
 
 .btn-live {
-    @include button-style($secondary-color, solid 2px $tertiary-color-dark);
+    @include button-style(white, solid 3px $tertiary-color);
 
     &:hover {
         background: $tertiary-color-dark;
+        .project-link {
+            color: #fafafa;
+        }
     }
+}
+
+.project-link {
+    @include link-style($primary-color);
 }

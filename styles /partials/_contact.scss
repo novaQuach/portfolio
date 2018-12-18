@@ -1,29 +1,61 @@
 .form-wrapper {
     display: flex;
     // justify-content: space-evenly;
-    align-items: center;
+    align-items: stretch;
+}
+
+.form-title-container {
+    background: darken($tertiary-color, 3);
+    width: 40%;
 }
 
 .form-title {
-    background: $accent-color-light;
-    flex: 1 0 40%;
+    @include heading-text($large-font, $accent-color-dark, uppercase);
     text-align: center;
-}
-
-.form-title,
-.form-title-span {
-    @include heading-text($large-font, darken($tertiary-color, 25), uppercase);
-    // font-style: italic;
-    display: block;
 }
 
 .contact-form {
     flex: 1 0 60%;
-    // background: $accent-color-dark;
+    // display: flex;
+    // justify-content: space-between;
+    // flex-direction: column;
+    background: $tertiary-color;
 }
 
 .form-items {
     display: block;
-    width: 100%;
-    background: $accent-color-dark;
+    width: 88%;
+    height: 40px;
+    background: lighten($tertiary-color, 5);
+    border-style: none;
+    padding-left: 10px;
+    margin: 12px auto;
+    &:first-child {
+        margin-top: 80px;
+    }
+    &::placeholder {
+        color: $primary-color;
+        // text-align: left;
+    }
+}
+
+#message {
+    resize: none;
+    height: 150px;
+}
+
+.message-btn-wrapper {
+    text-align: center;
+}
+
+.message-submit-btn {
+    @include button-style(white, solid 3px $accent-color-dark);
+    margin: 30px auto;
+    width: 200px;
+    color: $primary-color;
+
+    &:hover {
+        background: $accent-color-dark;
+        color: #fafafa;
+    }
 }

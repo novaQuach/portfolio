@@ -9,8 +9,15 @@
 @mixin button-style($color, $border...) {
     border-style: none;
     background: $color;
+    width: 150px;
     padding: 5px 25px;
     border-radius: 35px;
     border: $border;
 }
+
 // section title
+
+@mixin link-style($color) {
+    text-decoration: none;
+    color: $color;
+}

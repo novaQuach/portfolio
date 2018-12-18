@@ -21,7 +21,7 @@ footer {
     font-size: $xsmall-font;
 
     &-border {
-        border-right: 1px solid $primary-color;
+        border-right: 1px solid darken($quartenary-color, 5);
         &:last-child {
             border: none;
         }
@@ -35,6 +35,14 @@ footer {
 }
 
 .nav-links {
-    text-decoration: none;
-    color: darken($quartenary-color, 5);
+    @include link-style(darken($quartenary-color, 5));
+
+    &:hover {
+        color: darken($accent-color-dark, 10);
+        font-weight: bold;
+    }
+}
+
+.nav-icon {
+    font-size: $small-font;
 }
