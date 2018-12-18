@@ -462,7 +462,42 @@ a:hover {
 }
 
 .about-description-container {
-  margin: 100px 0 140px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-description {
+  line-height: 1.6;
+  margin: 0 40px 25px 0;
+}
+
+.portrait-wrapper {
+  width: 50%;
+}
+
+.portrait {
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 4px 0px #333;
+          box-shadow: 0px 0px 4px 0px #333;
+  width: 275px;
+  margin: 0 25px 25px 0;
+}
+
+.skills-background {
+  padding: 140px 0 20px 0;
+  background-color: #fafafa;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23333333' fill-opacity='0.22' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.skill-section-container {
+  margin: 0;
 }
 
 .skill-set-container {

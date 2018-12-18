@@ -1,3 +1,30 @@
+// .about-section-container {
+//     margin: 0;
+// }
+
 .about-description-container {
-    margin: 100px 0 140px 0;
+    // margin: 80px 0 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+.about-description {
+    @include body-text(0 40px 25px 0);
+}
+
+.portrait-wrapper {
+    width: 50%;
+}
+
+.portrait {
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 0px $primary-color;
+    width: 275px;
+    margin: 0 25px 25px 0;
+}
+
+// .about-background {
+//     @include section-background(140px 0 100px 0);
+//     // background-color: #fafafa;
+//     // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23333333' fill-opacity='0.22' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");;;;
+// }

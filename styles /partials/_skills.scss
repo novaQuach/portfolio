@@ -1,3 +1,11 @@
+.skills-background {
+    @include section-background(140px 0 20px 0);
+}
+
+.skill-section-container {
+    margin: 0;
+}
+
 .skill-set-container {
     display: flex;
     flex-wrap: wrap;
