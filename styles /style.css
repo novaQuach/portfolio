@@ -195,6 +195,7 @@ input::-moz-focus-inner {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -301,6 +302,10 @@ h1::before {
   z-index: 200;
   width: 20px;
   height: 20px;
+}
+
+.hamburger:hover {
+  cursor: pointer;
 }
 
 .toggle:checked + .nav-list {
