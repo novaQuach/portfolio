@@ -1,11 +1,15 @@
 AOS.init();
 
 $(document).ready(function() {
-    $('#home').click(function() {
-        $('.landing-header').scrollIntoView();
-    });
+    // $('#home').click(function(e) {
+    //     e.preventDefault();
+    //     $('.landing-header').get(0).scrollIntoView(true);
+    // });
 
-    $('#about').click(function() {
-        $('#about-me-section').scrollIntoView();
-    });
+    // $('#about').click(function(e) {
+    //     e.preventDefault();
+    //     $('#about-me-section').get(0).scrollIntoView(true);
+    // });
+
+
 });
