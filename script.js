@@ -1,4 +1,5 @@
 AOS.init();
+
 $(document).ready(function() {
     $('#home').click(function() {
         $('.landing-header').scrollIntoView();
