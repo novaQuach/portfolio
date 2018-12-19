@@ -27,11 +27,11 @@
                 <nav class="nav">
                     <input type="checkbox" class="toggle" id="toggle">
                     <ul class="nav-list">
-                        <li class="nav-items "><a class="nav-links" href="">Home</a></li>
-                        <li class="nav-items"><a class=" nav-links" href="">About</a></li>
-                        <li class="nav-items"><a class=" nav-links" href="">Projects</a></li>
-                        <li class="nav-items"><a class="nav-links" href="">Skills </a></li>
-                        <li class="nav-items nav-items-border"><a class="nav-links" href="">Contact</a></li>
+                        <li class="nav-items "><a class="nav-links id=" home" href="">Home</a></li>
+                        <li class="nav-items"><a class=" nav-links" id="about" href="">About</a></li>
+                        <li class="nav-items"><a class=" nav-links" id="projects" href="">Projects</a></li>
+                        <li class="nav-items"><a class="nav-links" id="skills" href="">Skills </a></li>
+                        <li class="nav-items nav-items-border"><a class="nav-links" id="contact" href="">Contact</a></li>
                     </ul>
                     <label for="toggle" class="hamburger">
                         <svg aria-hidden="true" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14"
@@ -57,7 +57,7 @@
                         </p>
                     </div>
 
-                    <h2 class="section-title">About me</h2>
+                    <h2 class="section-title" id="about-me-section">About me</h2>
                     <div class="about-description-container funkyBackground dotted">
                         <p class="about-description">
                             Hello! My name is Nova, and I am a front-end web developer based in Toronto. I enjoying
@@ -251,7 +251,7 @@
         <h2 class="section-title">Contact</h2>
 
 
-        <div class="form-wrapper">
+        <div class="form-wrapper" data-aos="fade-up" data-aos-duration="800">
             <div class="form-title-container">
                 <p class="form-title">say hello</p>
                 <ul class="contact-list">
@@ -282,9 +282,6 @@
                     </li>
                 </ul>
             </div>
-
-
-
             <form class="contact-form" action="">
                 <input class="form-items" type="text" placeholder="Name" id="name">
                 <label for="name"></label>
@@ -305,7 +302,7 @@
                     <label for="submit"></label>
                 </div>
             </form>
-        </div>
+
 
     </section>
     </main>
