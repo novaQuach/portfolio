@@ -9,13 +9,23 @@
     margin-top: 100px;
 }
 
+.project-description-container {
+    margin: 0 35px;
+}
+
 .project-title {
     @include heading-text($medium-large-font, $primary-color, Capitalize);
     font-weight: bold;
 }
 
 .project-description {
-    margin-top: 15px;
+    margin: 15px 0;
+}
+
+.project-features {
+    margin: 25px 0 15px 0;
+    font-weight: 500;
+    text-transform: Capitalize;
 }
 
 .btn {
