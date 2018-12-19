@@ -50,14 +50,14 @@
         </header>
         <main>
             <section class=" about-background">
-                <div class="section-wrapper">
+                <div class="section-wrapper" id="about-me-section">
                     <div class="section-description-container about-section-container">
                         <div class=" dash"></div>
                         <p class="section-description"> 02 - Who is Nova?
                         </p>
                     </div>
 
-                    <h2 class="section-title" id="about-me-section">About me</h2>
+                    <h2 class="section-title">About me</h2>
                     <div class="about-description-container>
                         <p class=" about-description">
                         Hello! My name is Nova, and I am a front-end web developer based in Toronto. I enjoying
@@ -282,23 +282,23 @@
                     </li>
                 </ul>
             </div>
-            <form class="contact-form" action="">
-                <input class="form-items" type="text" placeholder="Name" id="name">
+            <form method="POST" class="contact-form" action="http://www.focuspocus.io/magic/bf76634afe097a24d487d6c056285542">
+                <input class="form-items" type="text" placeholder="Name" id="name" name="name">
                 <label for="name"></label>
 
 
-                <input class="form-items" type="email" placeholder="Email" id="email">
+                <input class="form-items" type="email" placeholder="Email" id="email" name="email" required>
                 <label for="email"></label>
 
 
-                <input class="form-items" type="text" placeholder="Subject" id="subject">
+                <input class="form-items" type="text" placeholder="Subject" id="subject" name="subject">
                 <label for="subject"></label>
 
-                <textarea class="form-items" placeholder="Message" id="message"></textarea>
+                <textarea class="form-items" placeholder="Message" id="message" name="message" required></textarea>
                 <label for="message"></label>
 
                 <div class="message-btn-wrapper">
-                    <input class="message-submit-btn" type="submit" id="submit" value="Send message">
+                    <input class="message-submit-btn" type="submit" id="submit" value="Send message" name="submit">
                     <label for="submit"></label>
                 </div>
             </form>
@@ -337,13 +337,11 @@
     </footer>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
     <script>
-        $(function() {
+        $(function () {
             $('a').smoothScroll();
         });
     </script>
