@@ -744,7 +744,7 @@ footer {
   display: inline-block;
   font-size: 1.6rem;
   color: #7b7b7b;
-  z-index: 10;
+  z-index: 30;
 }
 
 .nav-contact-links,
