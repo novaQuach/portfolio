@@ -18,15 +18,16 @@
     top: 15px;
     right: 20px;
     z-index: 20;
-    
 
     &-list {
         position: fixed;
         z-index: 200;
         top: 0;
         bottom: 0;
-        right: -15%;
-        width: 15%;
+        // right: -15%;
+        right: -216px;
+        // width: 15%;
+        width: 216px;
         background: white;
         display: flex;
         flex-direction: column;
@@ -53,4 +54,8 @@
 
 .toggle {
     display: none;
+}
+
+.social-media-container li {
+    margin: 50px 5px 0 5px;
 }

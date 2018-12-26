@@ -326,8 +326,8 @@ h1::before {
   z-index: 200;
   top: 0;
   bottom: 0;
-  right: -15%;
-  width: 15%;
+  right: -216px;
+  width: 216px;
   background: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,6 +367,10 @@ h1::before {
 
 .toggle {
   display: none;
+}
+
+.social-media-container li {
+  margin: 50px 5px 0 5px;
 }
 
 .section-wrapper {
@@ -761,5 +765,16 @@ footer {
 
 .nav-icon {
   font-size: 1.8rem;
+}
+
+@media (max-width: 480px) {
+  .nav-list {
+    width: 100%;
+    right: -100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity: 0.85;
+  }
 }
 /*# sourceMappingURL=style.css.map */
