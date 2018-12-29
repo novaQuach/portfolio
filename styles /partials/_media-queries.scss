@@ -1,9 +1,6 @@
 @media (max-width: 400px) {
     .section-wrapper {
-        // padding: 0 220px;
-        // psd template 320px;
         width: 75%;
-        margin: 0 auto;
     }
     .nav-list {
         width: 100%;
@@ -12,6 +9,9 @@
         opacity: 0.85;
     }
 
+    .nav {
+    right: 12px;
+  
     h1,
     .h1-span {
         font-size: $large-font;
@@ -54,7 +54,7 @@
 
     .project {
         display: block;
-        margin-top: 80px;
+        margin: 25px 0 80px 0;
     }
 
     .first-project {
@@ -73,14 +73,7 @@
         margin-top: 25px;
     }
 
-    .project-features {
-        margin: 25px 0 15px 0;
-        font-weight: 500;
-        text-transform: Capitalize;
-    }
-
     .project-button-container {
-        // margin: 0 auto;
         justify-content: center;
         flex-wrap: wrap;
     }
@@ -94,8 +87,17 @@
         width: 250px;
     }
 
+    .skills-background {
+        padding: 5px 0;
+    }
+
+    .skill-set-container {
+        margin: 50px 0;
+    }
+
     .form-wrapper {
         flex-direction: column;
+        margin: 50px 0;
     }
 
     .form-title-container {
@@ -105,5 +107,9 @@
 
     .contact-form {
         border-radius: 0 0 4.5% 4.5%;
+    }
+
+    footer.inner-wrapper {
+        margin-top: 90px;
     }
 }

@@ -559,7 +559,6 @@ h1::before {
 .project-features {
   margin: 25px 0 15px 0;
   font-weight: 500;
-  text-transform: Capitalize;
 }
 
 .project-button-container {
@@ -619,6 +618,11 @@ h1::before {
       -ms-flex-align: stretch;
           align-items: stretch;
   margin: 100px 0 140px 0;
+}
+
+.section-wrapper.contact-section-wrapper {
+  width: 85%;
+  margin: 0 auto;
 }
 
 .form-title-container {
@@ -802,7 +806,6 @@ footer {
 @media (max-width: 400px) {
   .section-wrapper {
     width: 75%;
-    margin: 0 auto;
   }
   .nav-list {
     width: 100%;
@@ -848,7 +851,7 @@ footer {
   }
   .project {
     display: block;
-    margin-top: 80px;
+    margin: 25px 0 80px 0;
   }
   .first-project {
     margin-top: 50px;
@@ -861,11 +864,6 @@ footer {
   }
   .project-description-container {
     margin-top: 25px;
-  }
-  .project-features {
-    margin: 25px 0 15px 0;
-    font-weight: 500;
-    text-transform: Capitalize;
   }
   .project-button-container {
     -webkit-box-pack: center;
@@ -882,11 +880,18 @@ footer {
   .project-img {
     width: 250px;
   }
+  .skills-background {
+    padding: 5px 0;
+  }
+  .skill-set-container {
+    margin: 50px 0;
+  }
   .form-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 50px 0;
   }
   .form-title-container {
     width: 100%;
@@ -894,6 +899,9 @@ footer {
   }
   .contact-form {
     border-radius: 0 0 4.5% 4.5%;
+  }
+  footer.inner-wrapper {
+    margin-top: 90px;
   }
 }
 /*# sourceMappingURL=style.css.map */
