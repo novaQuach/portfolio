@@ -424,6 +424,10 @@ h1::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -486,7 +490,6 @@ h1::before {
 }
 
 .skill-item {
-  width: 20%;
   text-align: center;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 20%;
@@ -525,6 +528,13 @@ h1::before {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 140px 0;
+}
+
+.project-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .first-project {
@@ -789,7 +799,11 @@ footer {
   font-size: 1.8rem;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
+  .section-wrapper {
+    width: 75%;
+    margin: 0 auto;
+  }
   .nav-list {
     width: 100%;
     right: -100%;
@@ -797,6 +811,89 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     opacity: 0.85;
+  }
+  h1,
+  .h1-span {
+    font-size: 5.5rem;
+  }
+  h1::before {
+    content: '';
+    background: url(../../assets/lowercase-n.svg);
+    background-size: cover;
+    width: 93px;
+    height: 93px;
+    left: 122px;
+    bottom: 38px;
+    z-index: -10;
+  }
+  .section-description-container {
+    margin-top: 90px;
+  }
+  .section-title {
+    font-size: 3.5rem;
+  }
+  .about-description-container {
+    display: block;
+  }
+  .portrait-wrapper {
+    text-align: center;
+    width: 100%;
+  }
+  .portrait {
+    margin: 30px auto;
+    width: 200px;
+  }
+  .about-description {
+    margin: 0 auto;
+  }
+  .project {
+    display: block;
+    margin-top: 80px;
+  }
+  .first-project {
+    margin-top: 50px;
+  }
+  .project-description-container {
+    margin: 0 auto;
+  }
+  .project-title {
+    font-size: 2.4rem;
+  }
+  .project-description-container {
+    margin-top: 25px;
+  }
+  .project-features {
+    margin: 25px 0 15px 0;
+    font-weight: 500;
+    text-transform: Capitalize;
+  }
+  .project-button-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .btn,
+  .btn-live {
+    width: 200px;
+    margin: 5px;
+  }
+  .project-img {
+    width: 250px;
+  }
+  .form-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form-title-container {
+    width: 100%;
+    border-radius: 5% 5% 0 0;
+  }
+  .contact-form {
+    border-radius: 0 0 4.5% 4.5%;
   }
 }
 /*# sourceMappingURL=style.css.map */
