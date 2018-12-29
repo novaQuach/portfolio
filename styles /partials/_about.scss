@@ -6,6 +6,9 @@
 }
 .about-description {
     @include body-text(0 40px 25px 0);
+    & p {
+        margin-bottom: 15px;
+    }
 }
 
 .portrait-wrapper {

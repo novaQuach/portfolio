@@ -387,6 +387,7 @@ h1::before {
 }
 
 .section-wrapper {
+  padding-top: 80px;
   width: 70%;
   margin: 0 auto;
 }
@@ -398,7 +399,6 @@ h1::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 140px;
 }
 
 .section-description {
@@ -437,8 +437,12 @@ h1::before {
 }
 
 .about-description {
-  line-height: 1.6;
+  line-height: 1.7;
   margin: 0 40px 25px 0;
+}
+
+.about-description p {
+  margin-bottom: 15px;
 }
 
 .portrait-wrapper {
@@ -454,7 +458,7 @@ h1::before {
 }
 
 .skills-background {
-  padding: 140px 0 20px 0;
+  padding: 40px 0 30px 0;
   background-color: #fafafa;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23333333' fill-opacity='0.22' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
@@ -474,7 +478,7 @@ h1::before {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 100px 0 140px 0;
+  margin: 0;
 }
 
 .skill-icon {
@@ -829,9 +833,6 @@ footer {
     bottom: 38px;
     z-index: -10;
   }
-  .section-description-container {
-    margin-top: 90px;
-  }
   .section-title {
     font-size: 3.5rem;
   }
@@ -889,10 +890,7 @@ footer {
     width: 250px;
   }
   .skills-background {
-    padding: 5px 0;
-  }
-  .skill-set-container {
-    margin: 50px 0;
+    padding: 0;
   }
   .form-wrapper {
     -webkit-box-orient: vertical;
