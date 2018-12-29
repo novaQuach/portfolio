@@ -2,6 +2,10 @@
     .section-wrapper {
         width: 75%;
     }
+
+    // .nav {
+    //     right: 5px;
+    // }
     .nav-list {
         width: 100%;
         right: -100%;
@@ -9,9 +13,6 @@
         opacity: 0.85;
     }
 
-    .nav {
-    right: 12px;
-  
     h1,
     .h1-span {
         font-size: $large-font;
@@ -73,14 +74,24 @@
         margin-top: 25px;
     }
 
+    .project-img-container {
+        text-align: center;
+    }
+
     .project-button-container {
         justify-content: center;
         flex-wrap: wrap;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .project-link {
+        margin: 0;
     }
     .btn,
     .btn-live {
         width: 200px;
-        margin: 5px;
+        margin: 5px 0;
     }
 
     .project-img {
@@ -111,5 +122,11 @@
 
     footer.inner-wrapper {
         margin-top: 90px;
+    }
+}
+
+@media (max-width: 335px) {
+    .project-img {
+        width: 200px;
     }
 }

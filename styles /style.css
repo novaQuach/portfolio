@@ -565,14 +565,14 @@ h1::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 80%;
-  margin: 20px -23px 0 -23px;
 }
 
 .project-link {
   text-decoration: none;
   color: #333;
-  width: 50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
   margin: 0 23px;
 }
 
@@ -865,17 +865,25 @@ footer {
   .project-description-container {
     margin-top: 25px;
   }
+  .project-img-container {
+    text-align: center;
+  }
   .project-button-container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .project-link {
+    margin: 0;
   }
   .btn,
   .btn-live {
     width: 200px;
-    margin: 5px;
+    margin: 5px 0;
   }
   .project-img {
     width: 250px;
@@ -902,6 +910,12 @@ footer {
   }
   footer.inner-wrapper {
     margin-top: 90px;
+  }
+}
+
+@media (max-width: 335px) {
+  .project-img {
+    width: 200px;
   }
 }
 /*# sourceMappingURL=style.css.map */

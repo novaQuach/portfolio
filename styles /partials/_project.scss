@@ -33,13 +33,12 @@
 
 .project-button-container {
     display: flex;
-    width: 80%;
-    margin: 20px -23px 0 -23px;
+    // margin: 20px -23px 0 -23px;
 }
 
 .project-link {
     @include link-style($primary-color);
-    width: 50%;
+    flex: 0 1 25%;
     margin: 0 23px;
 }
 
