@@ -28,9 +28,21 @@
     text-transform: Capitalize;
 }
 
+.project-button-container {
+    display: flex;
+    width: 80%;
+    margin: 20px -23px 0 -23px;
+}
+
+.project-link {
+    @include link-style($primary-color);
+    width: 50%;
+    margin: 0 23px;
+}
+
 .btn {
     @include button-style(white, solid 2px $accent-color-dark);
-    margin: 20px;
+    // margin: 20px;
     &:hover {
         background: $accent-color-dark;
         .project-link {
@@ -48,8 +60,4 @@
             color: #fafafa;
         }
     }
-}
-
-.project-link {
-    @include link-style($primary-color);
 }

@@ -25,9 +25,9 @@
         top: 0;
         bottom: 0;
         // right: -15%;
-        right: -216px;
+        right: -250px;
         // width: 15%;
-        width: 216px;
+        width: 250px;
         background: white;
         display: flex;
         flex-direction: column;
@@ -56,6 +56,26 @@
     display: none;
 }
 
-.social-media-container li {
-    margin: 50px 5px 0 5px;
+// .nav-social-list li {
+//     margin: 50px 3px 0 3px;
+
+//     &:first-child {
+//         margin-left: 15px;
+//     }
+
+//     &:last-child {
+//         margin-right: 15px;
+//     }
+// }
+
+.nav-social-list {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-social-items {
+    flex: 0 1 25%;
 }
