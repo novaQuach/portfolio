@@ -624,11 +624,6 @@ h1::before {
   margin: 100px 0 140px 0;
 }
 
-.section-wrapper.contact-section-wrapper {
-  width: 85%;
-  margin: 0 auto;
-}
-
 .form-title-container {
   background: #ffad9e;
   width: 40%;
@@ -807,7 +802,7 @@ footer {
   font-size: 1.8rem;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .section-wrapper {
     width: 75%;
   }
@@ -839,6 +834,9 @@ footer {
   .about-description-container {
     display: block;
   }
+  .about-description {
+    margin: 0 auto;
+  }
   .portrait-wrapper {
     text-align: center;
     width: 100%;
@@ -846,9 +844,6 @@ footer {
   .portrait {
     margin: 30px auto;
     width: 200px;
-  }
-  .about-description {
-    margin: 0 auto;
   }
   .project {
     display: block;
@@ -889,8 +884,27 @@ footer {
   .project-img {
     width: 250px;
   }
+  .skill-section-container {
+    margin-left: 12.5%;
+  }
   .skills-background {
     padding: 0;
+  }
+  .skills-background .section-wrapper {
+    width: 100%;
+  }
+  .skills-background .section-title {
+    margin-left: 12.5%;
+  }
+  .skill-item {
+    margin: 25px;
+    padding: 0;
+  }
+  .skill-item svg {
+    width: 70px;
+  }
+  .skill-icon {
+    font-size: 7rem;
   }
   .form-wrapper {
     -webkit-box-orient: vertical;
@@ -902,6 +916,10 @@ footer {
   .form-title-container {
     width: 100%;
     border-radius: 5% 5% 0 0;
+  }
+  .section-wrapper.contact-section-wrapper {
+    width: 85%;
+    margin: 0 auto;
   }
   .contact-form {
     border-radius: 0 0 4.5% 4.5%;

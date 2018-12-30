@@ -1,11 +1,8 @@
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .section-wrapper {
         width: 75%;
     }
 
-    // .nav {
-    //     right: 5px;
-    // }
     .nav-list {
         width: 100%;
         right: -100%;
@@ -36,6 +33,14 @@
         display: block;
     }
 
+    .about-description {
+        margin: 0 auto;
+    }
+
+    // .about-description p {
+    //     font-size: $xsmall-font;
+    // }
+
     .portrait-wrapper {
         text-align: center;
         width: 100%;
@@ -43,10 +48,6 @@
     .portrait {
         margin: 30px auto;
         width: 200px;
-    }
-
-    .about-description {
-        margin: 0 auto;
     }
 
     .project {
@@ -94,8 +95,32 @@
         width: 250px;
     }
 
+    .skill-section-container {
+        margin-left: 12.5%;
+    }
+
     .skills-background {
         padding: 0;
+
+        & .section-wrapper {
+            width: 100%;
+        }
+
+        & .section-title {
+            margin-left: 12.5%;
+        }
+    }
+
+    .skill-item {
+        margin: 25px;
+        padding: 0;
+
+        & svg {
+            width: 70px;
+        }
+    }
+    .skill-icon {
+        font-size: 7rem;
     }
 
     .form-wrapper {
@@ -108,6 +133,10 @@
         border-radius: 5% 5% 0 0;
     }
 
+    .section-wrapper.contact-section-wrapper {
+        width: 85%;
+        margin: 0 auto;
+    }
     .contact-form {
         border-radius: 0 0 4.5% 4.5%;
     }
