@@ -10,9 +10,9 @@
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles /style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <link type="image/png" href="assets/favicon.png" rel="icon">
 
     <title>Nova Quach</title>
@@ -63,8 +63,10 @@
 
             </div>
             <div class="title-wrapper">
-                <h1 class="animated pulse">Nova <span class="h1-span">quach</span></h1>
-                <p class="role">Web developer</p>
+                <h1>Nova <span class="h1-span">quach</span></h1>
+                <div class="title-typed">
+                    <p class="role" id="typed"></p>
+                </div>
             </div>
         </header>
         <main>
@@ -91,146 +93,143 @@
                             <p>
                                 Currently looking to join an awesome team as a web developer.
                             </p>
-
-                            <p>
-                                When I am not coding, you can find me travelling,
-                                practicing yoga, or sipping on some boba.
-                            </p>
                         </div>
 
                     </div>
                 </div>
             </section>
 
-            <section class="section-wrapper" id="projects">
-                <div class="section-description-container">
-                    <div class=" dash"></div>
-                    <p class="section-description"> 03 - some of my work
-                    </p>
-                </div>
-                <h2 class="section-title">Projects</h2>
-
-                <div class="project project-reverse first-project">
-                    <div class="project-img-container" data-aos="flip-right" data-aos-duration="2000">
-                        <img class="project-img" src="./assets/piece-by-peace.png" alt="preview of piece by peace project">
+            <section id="projects">
+                <div class="section-wrapper">
+                    <div class="section-description-container">
+                        <div class=" dash"></div>
+                        <p class="section-description"> 03 - some of my work
+                        </p>
                     </div>
-                    <div class="project-description-container" data-aos="fade-up" data-aos-duration="1000">
-                        <p class="
+                    <h2 class="section-title">Projects</h2>
+
+                    <div class="project project-reverse first-project">
+                        <div class="project-img-container" data-aos="flip-right" data-aos-duration="2000">
+                            <img class="project-img" src="./assets/piece-by-peace.png" alt="preview of piece by peace project">
+                        </div>
+                        <div class="project-description-container" data-aos="fade-up" data-aos-duration="1000">
+                            <p class="
                         project-title">Piece by peace</p>
-                        <p class="project-description"> Think you know a lot of words? Try matching the
-                            correct
-                            homophone to the definition
-                            in the hard setting!
-                        </p>
-                        <p class="project-features"> React | Rest API | Firebase | Pair Programming </p>
-                        <div class="project-button-container">
-                            <a class="project-link" target="_blank" href="https://peace.novaquach.com/">
-                                <button class="btn-live">
-                                    Live
-                                </button>
-                            </a>
-                            <a class="project-link" target="_blank" href="https://github.com/novaQuach/fawad_xiaoge_nova_project_6">
-                                <button class="btn">
-                                    GitHub
-                                </button>
-                            </a>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="project">
-                    <div class="project-img-container" data-aos="flip-left" data-aos-duration="2000">
-                        <img class="project-img" src="./assets/quick-scribble.png" alt="preview of quick scribble project">
-                    </div>
-                    <div class="project-description-container" data-aos="fade-up" data-aos-duration="1000">
-                        <p class="
-                        project-title">Quick scribble</p>
-                        <p class="project-description"> Update your main focus for the day and jot down
-                            mini tasks.
-                            Cross out each task as you complete them, post-it style!
-
-                            <p class="project-features"> React | Firebase | Sass | Responsive design
+                            <p class="project-description"> Think you know a lot of words? Try matching the
+                                correct
+                                homophone to the definition
+                                in the hard setting!
                             </p>
-                        </p>
-                        <div class="project-button-container">
-                            <a class="project-link" target="_blank" href="https://quick-scribble.novaquach.com/">
-                                <button class="btn-live">
-                                    Live
-                                </button>
-                            </a>
-                            <a class="project-link" target="_blank" href="https://github.com/novaQuach/nova_quach_project5">
-                                <button class="btn">
-                                    GitHub
-                                </button>
-                            </a>
+                            <p class="project-features"> React | Rest API | Firebase | Pair Programming </p>
+                            <div class="project-button-container">
+                                <a class="project-link" target="_blank" href="https://peace.novaquach.com/">
+                                    <button class="btn-live">
+                                        Live
+                                    </button>
+                                </a>
+                                <a class="project-link" target="_blank" href="https://github.com/novaQuach/fawad_xiaoge_nova_project_6">
+                                    <button class="btn">
+                                        GitHub
+                                    </button>
+                                </a>
+                            </div>
+
                         </div>
 
-
                     </div>
-                </div>
 
-                <div class="project project-reverse">
-                    <div class="project-img-container" data-aos="flip-right" data-aos-duration="2000">
-                        <img class="project-img" src=" ./assets/glasses-me-now.png" alt="preview of glasses me now project">
+                    <div class="project">
+                        <div class="project-img-container" data-aos="flip-left" data-aos-duration="2000">
+                            <img class="project-img" src="./assets/quick-scribble.png" alt="preview of quick scribble project">
+                        </div>
+                        <div class="project-description-container" data-aos="fade-up" data-aos-duration="1000">
+                            <p class="
+                        project-title">Quick scribble</p>
+                            <p class="project-description"> Update your main focus for the day and jot down
+                                mini tasks.
+                                Cross out each task as you complete them, post-it style!
+
+                                <p class="project-features"> React | Firebase | Sass | Responsive design
+                                </p>
+                            </p>
+                            <div class="project-button-container">
+                                <a class="project-link" target="_blank" href="https://quick-scribble.novaquach.com/">
+                                    <button class="btn-live">
+                                        Live
+                                    </button>
+                                </a>
+                                <a class="project-link" target="_blank" href="https://github.com/novaQuach/nova_quach_project5">
+                                    <button class="btn">
+                                        GitHub
+                                    </button>
+                                </a>
+                            </div>
+
+
+                        </div>
                     </div>
-                    <div class="project-description-container" data-aos="fade-up" data-aos-duration="1000">
-                        <p class="
+
+                    <div class="project project-reverse">
+                        <div class="project-img-container" data-aos="flip-right" data-aos-duration="2000">
+                            <img class="project-img" src=" ./assets/glasses-me-now.png" alt="preview of glasses me now project">
+                        </div>
+                        <div class="project-description-container" data-aos="fade-up" data-aos-duration="1000">
+                            <p class="
                         project-title">Glasses me now</p>
-                        <p class="project-description"> Ever wondered what glasses suits you best?
-                            Well, wonder no more
-                            ! Take this quick quiz to find out now.
-                        </p>
-                        <p class="project-features"> jQuery | JavaScript | Sass | Responsive Design </p>
-                        <div class="project-button-container">
-                            <a class="project-link" target="_blank" href="https://novaquach.com/glasses-me-now/">
-                                <button class="btn-live">
-                                    Live
-                                </button>
-                            </a>
-                            <a class="project-link" target="_blank" href="https://github.com/novaQuach/nova_quach_project3">
-                                <button class="btn">
-                                    GitHub
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="project">
-                    <div class="project-img-container" data-aos="flip-left" data-aos-duration="2000">
-                        <img class="project-img" src="./assets/willow.png" alt="preview of willow project">
-                    </div>
-                    <div class="project-description-container" data-aos="fade-up" data-aos-duration="1000">
-                        <p class="project-title">Willow</p>
-                        <p class="project-description"> Check out what Willow is up to with this
-                            multi-page PSD
-                            conversion using
-                            float layout and BEM naming convention
-                        </p>
-                        <p class="project-features"> Float | BEM | CSS | HTML | Responsive Design</p>
-
-                        <div class="project-button-container">
-                            <a class="project-link" target="_blank" href="https://novaquach.com/willow/">
-                                <button class="btn-live">
-                                    Live
-                                </button>
-                            </a>
-                            <a class="project-link" target="_blank" href="https://github.com/novaQuach/nova_quach_project2">
-                                <button class="btn">
-                                    GitHub
-                                </button>
-                            </a>
-
+                            <p class="project-description"> Ever wondered what glasses suits you best?
+                                Well, wonder no more
+                                ! Take this quick quiz to find out now.
+                            </p>
+                            <p class="project-features"> jQuery | JavaScript | Sass | Responsive Design </p>
+                            <div class="project-button-container">
+                                <a class="project-link" target="_blank" href="https://novaquach.com/glasses-me-now/">
+                                    <button class="btn-live">
+                                        Live
+                                    </button>
+                                </a>
+                                <a class="project-link" target="_blank" href="https://github.com/novaQuach/nova_quach_project3">
+                                    <button class="btn">
+                                        GitHub
+                                    </button>
+                                </a>
+                            </div>
                         </div>
 
+                    </div>
+
+                    <div class="project">
+                        <div class="project-img-container" data-aos="flip-left" data-aos-duration="2000">
+                            <img class="project-img" src="./assets/willow.png" alt="preview of willow project">
+                        </div>
+                        <div class="project-description-container" data-aos="fade-up" data-aos-duration="1000">
+                            <p class="project-title">Willow</p>
+                            <p class="project-description"> Check out what Willow is up to with this
+                                multi-page PSD
+                                conversion using
+                                float layout and BEM naming convention
+                            </p>
+                            <p class="project-features"> Float | BEM | CSS | HTML | Responsive Design</p>
+
+                            <div class="project-button-container">
+                                <a class="project-link" target="_blank" href="https://novaquach.com/willow/">
+                                    <button class="btn-live">
+                                        Live
+                                    </button>
+                                </a>
+                                <a class="project-link" target="_blank" href="https://github.com/novaQuach/nova_quach_project2">
+                                    <button class="btn">
+                                        GitHub
+                                    </button>
+                                </a>
+
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section class="skills-background" id="skills">
+            <section class="" id="skills">
                 <div class="section-wrapper">
                     <div class="section-description-container skill-section-container">
                         <div class="dash"></div>
@@ -300,70 +299,72 @@
                 </div>
             </section>
 
-            <section class="section-wrapper contact-section-wrapper" id="contact">
-                <div class="section-description-container">
-                    <div class="dash"></div>
-                    <p class="section-description"> 05 - let's get in touch
-                    </p>
-                </div>
-                <h2 class="section-title">Contact</h2>
-
-
-                <div class="form-wrapper">
-                    <div class="form-title-container">
-                        <p class="form-title">say hello</p>
-                        <ul class="contact-list">
-                            <li class="contact-item">
-                                <p>email me</p>
-                                <div class="dash dash-spacer"></div>
-                            </li>
-                            <li><a class="contact-link" href="mailto:hello@novaquach.com">hello@novaquach.com</a></li>
-                            <li class="contact-item">
-                                <p>follow me</p>
-                                <div class="dash dash-spacer"></div>
-                            </li>
-                            <li>
-                                <ul class="nav-contact-list">
-                                    <li class="nav-contact-items">
-                                        <a class="nav-contact-links" target="_blank" href="https://twitter.com/novaquach"><i
-                                                class="fab fa-twitter contact-icon "></i></a>
-                                    </li>
-                                    <li class="nav-contact-items">
-                                        <a class="nav-contact-links" target="_blank" href="https://medium.com/@novaquach_90355"><i
-                                                class="fab fa-medium-m contact-icon "></i></a>
-                                    </li>
-                                    <li class="nav-contact-items">
-                                        <a class="nav-contact-links" target="_blank" href="https://github.com/novaQuach"><i
-                                                class="fab fa-github contact-icon "></i></a>
-                                    </li>
-                                    <li class="nav-contact-items">
-                                        <a class="nav-contact-links" target="_blank" href="https://linkedin.com/in/novaquach"><i
-                                                class="fab fa-linkedin-in contact-icon "></i></a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+            <section class="contact-background" id="contact">
+                <div class="section-wrapper contact-section-wrapper">
+                    <div class="section-description-container">
+                        <div class="dash"></div>
+                        <p class="section-description"> 05 - let's get in touch
+                        </p>
                     </div>
-                    <form method="POST" class="contact-form" action="http://www.focuspocus.io/magic/bf76634afe097a24d487d6c056285542">
-                        <input class="form-items" type="text" placeholder="Name" id="name" name="name">
-                        <label for="name"></label>
+                    <h2 class="section-title">Contact</h2>
 
 
-                        <input class="form-items" type="email" placeholder="Email" id="email" name="email" required>
-                        <label for="email"></label>
-
-
-                        <input class="form-items" type="text" placeholder="Subject" id="subject" name="subject">
-                        <label for="subject"></label>
-
-                        <textarea class="form-items" placeholder="Message" id="message" name="message" required></textarea>
-                        <label for="message"></label>
-
-                        <div class="message-btn-wrapper">
-                            <input class="message-submit-btn" type="submit" id="submit" value="Send message" name="submit">
-                            <label for="submit"></label>
+                    <div class="form-wrapper">
+                        <div class="form-title-container">
+                            <p class="form-title">say hello</p>
+                            <ul class="contact-list">
+                                <li class="contact-item">
+                                    <p>email me</p>
+                                    <div class="dash dash-spacer"></div>
+                                </li>
+                                <li><a class="contact-link" href="mailto:hello@novaquach.com">hello@novaquach.com</a></li>
+                                <li class="contact-item">
+                                    <p>follow me</p>
+                                    <div class="dash dash-spacer"></div>
+                                </li>
+                                <li>
+                                    <ul class="nav-contact-list">
+                                        <li class="nav-contact-items">
+                                            <a class="nav-contact-links" target="_blank" href="https://twitter.com/novaquach"><i
+                                                    class="fab fa-twitter contact-icon "></i></a>
+                                        </li>
+                                        <li class="nav-contact-items">
+                                            <a class="nav-contact-links" target="_blank" href="https://medium.com/@novaquach_90355"><i
+                                                    class="fab fa-medium-m contact-icon "></i></a>
+                                        </li>
+                                        <li class="nav-contact-items">
+                                            <a class="nav-contact-links" target="_blank" href="https://github.com/novaQuach"><i
+                                                    class="fab fa-github contact-icon "></i></a>
+                                        </li>
+                                        <li class="nav-contact-items">
+                                            <a class="nav-contact-links" target="_blank" href="https://linkedin.com/in/novaquach"><i
+                                                    class="fab fa-linkedin-in contact-icon "></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
-                    </form>
+                        <form method="POST" class="contact-form" action="http://www.focuspocus.io/magic/bf76634afe097a24d487d6c056285542">
+                            <input class="form-items" type="text" placeholder="Name" id="name" name="name">
+                            <label for="name"></label>
+
+
+                            <input class="form-items" type="email" placeholder="Email" id="email" name="email" required>
+                            <label for="email"></label>
+
+
+                            <input class="form-items" type="text" placeholder="Subject" id="subject" name="subject">
+                            <label for="subject"></label>
+
+                            <textarea class="form-items" placeholder="Message" id="message" name="message" required></textarea>
+                            <label for="message"></label>
+
+                            <div class="message-btn-wrapper">
+                                <input class="message-submit-btn" type="submit" id="submit" value="Send message" name="submit">
+                                <label for="submit"></label>
+                            </div>
+                        </form>
+                    </div>
             </section>
         </main>
         <footer class="inner-wrapper">
@@ -376,7 +377,9 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script src="./script.js"></script>
+
 </body>
 
 </html>

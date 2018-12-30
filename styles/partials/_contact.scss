@@ -1,3 +1,6 @@
+.contact-background {
+    @include section-background(40px 0 30px 0);
+}
 .form-wrapper {
     display: flex;
     align-items: stretch;
