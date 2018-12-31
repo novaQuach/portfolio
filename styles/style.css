@@ -272,6 +272,18 @@ h1::before {
   z-index: -10;
 }
 
+.title-typed {
+  height: 37px;
+}
+
+.role {
+  color: #888;
+  font-size: 2.4rem;
+  text-transform: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
 .logo-nav-container {
   padding-top: 15px;
 }
@@ -291,18 +303,6 @@ h1::before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.title-typed {
-  height: 37px;
-}
-
-.role {
-  color: #888;
-  font-size: 2.4rem;
-  text-transform: none;
-  margin-top: 10px;
-  display: inline-block;
 }
 
 .hamburger {
@@ -586,7 +586,10 @@ h1::before {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 25%;
           flex: 0 1 25%;
-  margin: 0 23px;
+}
+
+.project-link-live {
+  margin-right: 23px;
 }
 
 .btn {
@@ -816,6 +819,123 @@ footer {
   font-size: 1.8rem;
 }
 
+@media (max-width: 1425px) {
+  .portrait {
+    width: 250px;
+  }
+  .project-img-container {
+    text-align: center;
+  }
+  .project-img {
+    width: 450px;
+  }
+  .project-description-container,
+  .project-button-container {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1282px) {
+  .project-img {
+    width: 400px;
+  }
+  .project-description-container,
+  .project-button-container {
+    width: 350px;
+  }
+  .btn,
+  .btn-live {
+    width: 150px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .project-img {
+    width: 350px;
+  }
+  .project-description-container,
+  .project-button-container {
+    width: 350px;
+  }
+}
+
+@media (max-width: 1065px) {
+  .about-description-container {
+    display: block;
+  }
+  .about-description {
+    padding: 20px;
+  }
+  .portrait-wrapper {
+    text-align: center;
+    width: 100%;
+  }
+  .portrait {
+    margin: 30px auto;
+  }
+  .project {
+    display: block;
+    margin: 25px 0 120px 0;
+  }
+  .project-description-container {
+    margin: 80px auto 0 auto;
+    width: 100%;
+  }
+  .project-img {
+    width: 500px;
+  }
+  .project-button-container {
+    margin: 40px auto 0 auto;
+  }
+  .project-button-container .project-link-live {
+    margin-right: 23px;
+  }
+  .project-button-container .btn,
+  .project-button-container .btn-live {
+    width: 200px;
+  }
+  .project-button-container .skill-section-container {
+    margin-left: 12.5%;
+  }
+  .project-button-container .skills-background {
+    padding: 0;
+  }
+  .project-button-container .skills-background .section-wrapper {
+    width: 100%;
+  }
+  .project-button-container .skills-background .section-title {
+    margin-left: 12.5%;
+  }
+  .project-button-container .skill-item {
+    margin: 25px;
+    padding: 0;
+  }
+  .project-button-container .skill-item svg {
+    width: 70px;
+  }
+  .project-button-container .skill-icon {
+    font-size: 7rem;
+  }
+  .project-button-container .form-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 50px 0;
+  }
+  .project-button-container .form-title-container {
+    width: 100%;
+    border-radius: 5% 5% 0 0;
+  }
+  .project-button-container .section-wrapper.contact-section-wrapper {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .project-button-container .contact-form {
+    border-radius: 0 0 4.5% 4.5%;
+  }
+}
+
 @media (max-width: 450px) {
   .section-wrapper {
     width: 75%;
@@ -828,8 +948,8 @@ footer {
             align-items: center;
     opacity: 0.85;
   }
-  h1,
-  .h1-span {
+  .title-wrapper h1,
+  .title-wrapper .h1-span {
     font-size: 5.5rem;
   }
   h1::before {
@@ -841,6 +961,9 @@ footer {
     left: 122px;
     bottom: 38px;
     z-index: -10;
+  }
+  .role {
+    font-size: 1.8rem;
   }
   .section-title {
     font-size: 3.5rem;
@@ -874,29 +997,27 @@ footer {
   }
   .project-description-container {
     margin-top: 25px;
+    width: 100%;
   }
-  .project-img-container {
-    text-align: center;
+  .project-img {
+    width: 250px;
   }
   .project-button-container {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0 auto;
     width: 100%;
   }
+  .project-link-live,
   .project-link {
-    margin: 0;
+    margin: 0 auto;
   }
   .btn,
   .btn-live {
     width: 200px;
     margin: 5px 0;
-  }
-  .project-img {
-    width: 250px;
   }
   .skill-section-container {
     margin-left: 12.5%;
@@ -937,9 +1058,6 @@ footer {
   }
   .contact-form {
     border-radius: 0 0 4.5% 4.5%;
-  }
-  footer.inner-wrapper {
-    margin-top: 90px;
   }
 }
 

@@ -42,9 +42,12 @@
 .project-link {
     @include link-style($primary-color);
     flex: 0 1 25%;
-    margin: 0 23px;
+    // margin: 0 23px;
 }
 
+.project-link-live {
+    margin-right: 23px;
+}
 .btn {
     @include button-style(white, solid 2px $accent-color-dark);
     // margin: 20px;

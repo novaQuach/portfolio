@@ -43,6 +43,16 @@ h1::before {
     z-index: -10;
 }
 
+.title-typed {
+    height: 37px;
+}
+
+.role {
+    @include heading-text($medium-font, $quartenary-color, none);
+    margin-top: 10px;
+    display: inline-block;
+}
+
 .logo-nav-container {
     padding-top: 15px;
 }
@@ -57,13 +67,4 @@ h1::before {
 .logo-nav-container {
     display: flex;
     justify-content: space-between;
-}
-
-.title-typed {
-    height: 37px;
-}
-.role {
-    @include heading-text($medium-font, $quartenary-color, none);
-    margin-top: 10px;
-    display: inline-block;
 }
