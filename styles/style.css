@@ -903,9 +903,6 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .project-button-container .project-link-live {
-    margin-right: 23px;
-  }
   .project-button-container .btn,
   .project-button-container .btn-live {
     width: 200px;
