@@ -1,11 +1,15 @@
 #projects {
-    @include section-background(40px 0 30px 0);
+    @include section-background(0 0 0 0);
 }
 .project {
     display: flex;
     width: 100%;
     justify-content: space-between;
     margin: 140px 0;
+
+    &:last-child {
+        margin-bottom: 40px;
+    }
 }
 
 .project-reverse {
@@ -13,7 +17,7 @@
 }
 
 .first-project {
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .project-description-container {
