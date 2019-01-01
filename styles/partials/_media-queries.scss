@@ -85,6 +85,28 @@
     }
 
     @media (max-width: 800px) {
+        .title-wrapper {
+            & h1,
+            & .h1-span {
+                font-size: $large-font;
+            }
+        }
+
+        h1::before {
+            content: '';
+            background: url(../../assets/lowercase-n.svg);
+            background-size: cover;
+            width: 93px;
+            height: 93px;
+            left: 122px;
+            bottom: 38px;
+            z-index: -10;
+        }
+
+        .role {
+            font-size: $small-font;
+        }
+
         .skills-background {
             padding: 0;
 
@@ -125,27 +147,6 @@
             align-items: center;
             opacity: 0.85;
         }
-        .title-wrapper {
-            & h1,
-            & .h1-span {
-                font-size: $large-font;
-            }
-        }
-
-        h1::before {
-            content: '';
-            background: url(../../assets/lowercase-n.svg);
-            background-size: cover;
-            width: 93px;
-            height: 93px;
-            left: 122px;
-            bottom: 38px;
-            z-index: -10;
-        }
-
-        .role {
-            font-size: $small-font;
-        }
 
         .section-title {
             font-size: $medium-large-font;
@@ -158,9 +159,9 @@
             margin: 0 auto;
         }
 
-        // .about-description p {
-        //     font-size: $xsmall-font;
-        // }
+        .about-description p {
+            font-size: $xsmall-font;
+        }
 
         .portrait-wrapper {
             text-align: center;
