@@ -56,26 +56,16 @@
     display: none;
 }
 
-// .nav-social-list li {
-//     margin: 50px 3px 0 3px;
-
-//     &:first-child {
-//         margin-left: 15px;
-//     }
-
-//     &:last-child {
-//         margin-right: 15px;
-//     }
-// }
-
 .nav-social-list {
     display: flex;
     justify-content: space-around;
     justify-items: center;
-    padding: 0;
     list-style: none;
+
+    margin: 25px 20px 0 0;
 }
 
 .nav-social-items {
+    padding: 0 8px;
     flex: 0 1 25%;
 }
