@@ -250,14 +250,6 @@
         margin-top: 50px;
     }
 
-    .project-description-container {
-        margin: 0 auto;
-        & .project-description,
-        .project-features {
-            font-size: $xsmall-font;
-        }
-    }
-
     .project-title {
         font-size: $medium-font;
     }
@@ -265,6 +257,12 @@
     .project-description-container {
         margin-top: 25px;
         width: 100%;
+        & .project-description {
+            font-size: $xsmall-font;
+        }
+        & .project-features {
+            font-size: 1.4rem;
+        }
     }
 
     .project-img {

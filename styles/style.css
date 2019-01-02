@@ -689,9 +689,24 @@ h1::before {
   margin: 15px 0;
 }
 
+.project-features-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .project-features {
-  margin: 25px 0 15px 0;
-  font-weight: 500;
+  color: #626262;
+  font-size: 1.6rem;
+  text-transform: none;
+  margin: 4px;
+  padding: 4px 5px;
+  border: 1px solid #888;
+  border-radius: 4px;
 }
 
 .project-button-container {
@@ -1164,19 +1179,18 @@ footer {
   .first-project {
     margin-top: 50px;
   }
-  .project-description-container {
-    margin: 0 auto;
-  }
-  .project-description-container .project-description,
-  .project-description-container .project-features {
-    font-size: 1.6rem;
-  }
   .project-title {
     font-size: 2.4rem;
   }
   .project-description-container {
     margin-top: 25px;
     width: 100%;
+  }
+  .project-description-container .project-description {
+    font-size: 1.6rem;
+  }
+  .project-description-container .project-features {
+    font-size: 1.4rem;
   }
   .project-img {
     width: 280px;

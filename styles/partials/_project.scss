@@ -33,20 +33,28 @@
     margin: 15px 0;
 }
 
+.project-features-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
 .project-features {
-    margin: 25px 0 15px 0;
-    font-weight: 500;
+    @include heading-text($xsmall-font, darken($quartenary-color, 15), none);
+    margin: 4px;
+    padding: 4px 5px;
+    border: 1px solid $quartenary-color;
+    border-radius: 4px;
 }
 
 .project-button-container {
     display: flex;
-    // margin: 20px -23px 0 -23px;
 }
 
 .project-link {
     @include link-style($primary-color);
     flex: 0 1 25%;
-    // margin: 0 23px;
 }
 
 .project-link-live {
@@ -54,7 +62,6 @@
 }
 .btn {
     @include button-style(white, solid 2px $accent-color-dark);
-    // margin: 20px;
     &:hover {
         background: $accent-color-dark;
         .project-link {
