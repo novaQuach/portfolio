@@ -153,7 +153,7 @@
     }
 
     .skill-item {
-        margin: 22px;
+        // margin: 22px;
         padding: 0;
 
         ÷ & svg {
@@ -224,6 +224,7 @@
     }
     .about-description-container {
         display: block;
+        margin: 0;
     }
 
     .about-description {
@@ -288,24 +289,27 @@
         margin: 5px 0;
     }
 
-    .skill-item {
-        margin: 16px;
+    .form-wrapper {
+        margin: 20px 0;
+    }
+    #contact .section-wrapper {
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 335px) {
+    .project-img {
+        width: 200px;
     }
 
-    @media (max-width: 335px) {
-        .project-img {
-            width: 200px;
-        }
+    #skills .section-wrapper,
+    #contact .section-wrapper {
+        width: 90%;
+    }
 
-        #skills .section-wrapper,
-        #contact .section-wrapper {
-            width: 90%;
-        }
-
-        .skill-icon {
-            & svg {
-                width: 50px;
-            }
+    .skill-icon {
+        & svg {
+            width: 50px;
         }
     }
 }

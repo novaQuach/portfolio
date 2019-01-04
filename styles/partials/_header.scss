@@ -3,10 +3,6 @@
     height: 100vh;
 }
 
-// .title-chevron-wrapper {
-//     // height: 100vh;
-// }
-
 .title-wrapper {
     height: calc(55vh - 50px);
     display: flex;
@@ -78,7 +74,7 @@ h1::before {
     justify-content: center;
     align-items: flex-end;
     width: 100%;
-    height: 40vh;
+    height: 39vh;
 
     a:focus {
         outline: none;
