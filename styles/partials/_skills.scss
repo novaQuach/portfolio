@@ -14,12 +14,16 @@
 .skill-icon {
     // color: $tertiary-color;
     color: $accent-color-dark;
+    font-size: 8rem;
+}
+
+.skill-icon.firebase-icon {
     font-size: 7.5rem;
 }
 
 .skill-svg {
-    width: 7.5rem;
-    height: 7.5rem;
+    width: 8rem;
+    height: 8rem;
     fill: $accent-color-dark;
     font-weight: bold;
 }

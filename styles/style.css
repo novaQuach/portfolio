@@ -607,12 +607,16 @@ h1::before {
 
 .skill-icon {
   color: #59b0a9;
+  font-size: 8rem;
+}
+
+.skill-icon.firebase-icon {
   font-size: 7.5rem;
 }
 
 .skill-svg {
-  width: 7.5rem;
-  height: 7.5rem;
+  width: 8rem;
+  height: 8rem;
   fill: #59b0a9;
   font-weight: bold;
 }
@@ -1106,11 +1110,11 @@ footer {
     margin-left: 12.5%;
   }
   .skill-item {
-    margin: 25px;
+    margin: 22px;
     padding: 0;
   }
   ÷ .skill-item svg {
-    width: 60px;
+    width: 50px;
   }
   .skill-icon {
     font-size: 6rem;
@@ -1227,6 +1231,9 @@ footer {
   .btn-live {
     width: 200px;
     margin: 5px 0;
+  }
+  .skill-item {
+    margin: 16px;
   }
 }
 

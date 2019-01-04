@@ -153,13 +153,14 @@
     }
 
     .skill-item {
-        margin: 25px;
+        margin: 22px;
         padding: 0;
 
         ÷ & svg {
-            width: 60px;
+            width: 50px;
         }
     }
+
     .skill-icon {
         font-size: 6rem;
     }
@@ -285,6 +286,10 @@
     .btn-live {
         width: 200px;
         margin: 5px 0;
+    }
+
+    .skill-item {
+        margin: 16px;
     }
 
     @media (max-width: 335px) {
