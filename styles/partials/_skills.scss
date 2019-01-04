@@ -14,14 +14,19 @@
 .skill-icon {
     // color: $tertiary-color;
     color: $accent-color-dark;
-    font-size: $xlarge-font;
+    font-size: 7.5rem;
 }
 
 .skill-svg {
-    width: 100px;
-    height: 100px;
+    width: 7.5rem;
+    height: 7.5rem;
     fill: $accent-color-dark;
     font-weight: bold;
+}
+.skill-description {
+    display: block;
+    @include heading-text($small-font, $quartenary-color, none);
+    opacity: 0.5;
 }
 
 .skill-item {
@@ -41,13 +46,12 @@
         }
 
         .skill-description {
-            visibility: visible;
+            opacity: 1;
+            color: $accent-color-dark;
         }
     }
 }
 
-.skill-description {
-    display: block;
-    visibility: hidden;
-    @include heading-text($small-font, $tertiary-color-dark, none);
+.skill-item.skill-item-firebase {
+    padding: 0;
 }
