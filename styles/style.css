@@ -774,7 +774,7 @@ h1::before {
   width: 175px;
   padding: 5px 25px;
   border-radius: 35px;
-  border: solid 3px #ffbaad;
+  border: solid 2px #ffbaad;
 }
 
 .btn-live:hover {

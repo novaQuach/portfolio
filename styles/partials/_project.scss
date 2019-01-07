@@ -71,7 +71,7 @@
 }
 
 .btn-live {
-    @include button-style(white, solid 3px $tertiary-color);
+    @include button-style(white, solid 2px $tertiary-color);
 
     &:hover {
         background: $tertiary-color-dark;
