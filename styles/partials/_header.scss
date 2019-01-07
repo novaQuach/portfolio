@@ -81,10 +81,11 @@ h1::before {
     }
 
     .chevron-link {
+        display: flex;
         height: 80px;
         width: 100%;
-        text-align: center;
         text-decoration: none;
+        justify-content: center;
     }
 }
 

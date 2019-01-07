@@ -330,10 +330,15 @@ h1::before {
 }
 
 .chevron-container .chevron-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 80px;
   width: 100%;
-  text-align: center;
   text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .chevron {
@@ -572,6 +577,10 @@ h1::before {
 
 .about-description p {
   margin-bottom: 15px;
+}
+
+.about-description p span {
+  color: #ff6447;
 }
 
 .portrait-wrapper {
@@ -1182,8 +1191,8 @@ footer {
     padding: 0;
   }
   .about-description p {
-    margin: 0 auto;
-    font-size: 1.6rem;
+    margin: 0 auto 15px auto;
+    font-size: 1.4rem;
   }
   .portrait-wrapper {
     text-align: center;
