@@ -132,10 +132,17 @@
 
         & svg {
             width: 70px;
+            height: 70px;
         }
     }
     .skill-icon {
         font-size: 7rem;
+    }
+}
+
+@media (max-width: 765px) {
+    .skill-item-git {
+        display: block;
     }
 }
 
@@ -151,20 +158,26 @@
             margin-left: 12.5%;
         }
     }
-
-    .skill-item {
-        // margin: 22px;
+    ƒ .skill-item {
         padding: 0;
 
-        ÷ & svg {
-            width: 50px;
+        & svg {
+            width: 60px;
+            height: 60px;
+        }
+        &:last-child {
+            margin-left: 10px;
         }
     }
 
-    .skill-icon {
+    .skill-icon,
+    .skill-item-git {
         font-size: 6rem;
     }
 
+    .skill-item-git {
+        margin-top: 0;
+    }
     .skill-description {
         opacity: 1;
         font-size: $xsmall-font;
@@ -294,6 +307,11 @@
     }
     #contact .section-wrapper {
         padding-bottom: 20px;
+    }
+
+    .skill-item:last-child {
+        margin-left: 8px;
+        margin-right: 8px;
     }
 }
 
