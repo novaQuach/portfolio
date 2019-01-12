@@ -659,7 +659,7 @@ h1::before {
 
 .skill-item:hover .skill-description {
   opacity: 1;
-  color: #59b0a9;
+  color: #ff6447;
 }
 
 .skill-item-git {

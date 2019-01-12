@@ -18,5 +18,9 @@ let typed = new Typed('#typed', {
 $(document).ready(function() {
     $(function() {
         $('a').smoothScroll();
+        $('.nav-links').on('click', () => {
+            // hamburger menu is a hidden checkbox, when clicked, checkbox checked, menu pops out(indicated by css styles .toggle:checked) onClick of a nav-link, changing checkbox property value to false/unchecked.
+            $('.toggle').prop('checked', false);
+        });
     });
 });
