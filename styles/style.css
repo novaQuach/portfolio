@@ -1268,6 +1268,15 @@ footer {
   }
 }
 
+@media (max-width: 399px) {
+  .skill-item {
+    margin: 25px;
+  }
+  .skill-item-git {
+    display: none;
+  }
+}
+
 @media (max-width: 335px) {
   .project-img {
     width: 200px;

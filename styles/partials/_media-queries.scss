@@ -315,6 +315,15 @@
     }
 }
 
+@media (max-width: 399px) {
+    .skill-item {
+        margin: 25px;
+        &-git {
+            display: none;
+        }
+    }
+}
+
 @media (max-width: 335px) {
     .project-img {
         width: 200px;
