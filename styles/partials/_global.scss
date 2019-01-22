@@ -7,10 +7,8 @@ body {
     font-family: $primary-font;
     font-size: $small-font;
 }
-
-button:focus,
-a:focus {
-    outline: none;
+button:focus {
+    @include focusStyle(auto, $tertiary-color, medium);
 }
 
 p {

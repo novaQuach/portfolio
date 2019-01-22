@@ -131,10 +131,17 @@
     color: darken($quartenary-color, 5);
     z-index: 30;
 }
+
+.contact-link:focus,
+.nav-contact-links:focus,
+input:focus,
+textarea:focus {
+    @include focusStyle(auto, $accent-color-dark, medium);
+}
+
 .nav-contact-links,
 .nav-links {
     @include link-style(darken($quartenary-color, 5));
-
     &:hover {
         color: darken($accent-color-dark, 10);
         font-weight: bold;

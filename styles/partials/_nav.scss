@@ -4,6 +4,7 @@
     z-index: 200;
     width: 20px;
     height: 20px;
+
     &:hover {
         cursor: pointer;
     }
@@ -37,6 +38,7 @@
         opacity: 0.75;
         z-index: 20;
     }
+
     &-items:last-child {
         padding-right: 10px;
     }

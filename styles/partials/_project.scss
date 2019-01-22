@@ -55,6 +55,9 @@
 .project-link {
     @include link-style($primary-color);
     flex: 0 1 25%;
+    &:focus {
+        outline: none;
+    }
 }
 
 .project-link-live {

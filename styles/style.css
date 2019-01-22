@@ -204,9 +204,10 @@ body {
   font-size: 1.8rem;
 }
 
-button:focus,
-a:focus {
-  outline: none;
+button:focus {
+  outline-style: auto;
+  outline-color: #ffbaad;
+  outline-width: medium;
 }
 
 p {
@@ -746,6 +747,10 @@ h1::before {
           flex: 0 1 25%;
 }
 
+.project-link:focus {
+  outline: none;
+}
+
 .project-link-live {
   margin-right: 23px;
 }
@@ -953,6 +958,15 @@ h1::before {
   font-size: 1.6rem;
   color: #7b7b7b;
   z-index: 30;
+}
+
+.contact-link:focus,
+.nav-contact-links:focus,
+input:focus,
+textarea:focus {
+  outline-style: auto;
+  outline-color: #59b0a9;
+  outline-width: medium;
 }
 
 .nav-contact-links,
